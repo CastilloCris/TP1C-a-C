@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#tit1 {
+  text-align: center;
+}
+
+header {
+  background-color: orange;
+}
+
+li {
+  display: inline;
+  background-color: orangered;
+  width: 10px;
+  height: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+.sop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rece {
+  background-color: orangered;
+}
+
+section {
+  height: 500px;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  background-color: orange;
+
+  padding: 25px;
+}
