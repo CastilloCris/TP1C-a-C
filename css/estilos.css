@@ -1,6 +1,11 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0.5px;
+  margin: 0.5px;
+}
+
+body {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
 }
 
 #tit1 {
@@ -23,13 +28,19 @@ a {
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 30px;
 }
 
 .sop {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 50px;
+}
+
+#parrafo {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
 }
 
 .rece {
@@ -46,4 +57,8 @@ footer p {
   background-color: orange;
 
   padding: 25px;
+}
+
+#con {
+  margin: 30px;
 }
