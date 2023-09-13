@@ -1,32 +1,82 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="imagenes/logo_cocina.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/estilos.css" />
-    <title>La cocina de Juan</title>
+    <title>Log In</title>
   </head>
   <body>
-    <header>
-      <nav id="menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="acerca.html">Acerca De</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <h1 id="tit1">La Cocina de Juan</h1>
-    </header>
-  <section>
-    <h2>Sopa Crema de Calabaza</h2>
-    <div class="sop">
-    <img src="imagenes/sopa.jpg" alt="" />
+    <h1 id="h_log">Cocina Misionera</h1>
+    <div id="log_log">
+      <a href="pagprin.html"
+        ><img src="imagenes/logo_cocina.png" alt="logo"
+      /></a>
     </div>
-    <br />
-    <button class="rece">Receta</button>
-  </section>
-    <footer>
-      <P>Derechos reservados &#64 2020</P>
-    </footer>
+    <!--Login-->
+    <section id="sec_log">
+      <div class="login-box">
+        <form action="">
+          <h2>Login</h2>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" id="usuario" />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" id="contraseña" required />
+            <label>password</label>
+          </div>
+
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Rememberme</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <input
+            class="button"
+            type="button"
+            value="Ingresar"
+            onclick="login()"
+          />
+          <div class="register-link">
+            <p>Todavia no te registraste?<a href="#">Registrate</a></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      function login() {
+        var user, pass;
+
+        user = document.getElementById("usuario").value;
+        pass = document.getElementById("contraseña").value;
+
+        if (user == "ejemplo@gmail.com" && pass == "1234") {
+          window.location = "pagprin.html";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -3,26 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="imagenes/logo_cocina.ico" type="image/x-icon">
     <title>Contacto</title>
   </head>
   <body>
     <header>
-      <nav id="menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="acerca.html">Acerca De</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+      <nav >        
+        <ul id="menu">
+          <img id="logo" src="imagenes/logo_cocina.png" alt="logo">
+          <h1 id="tit1">Cocina Misionera</h1>
+          <li class="menu1"><a href="pagprin.html">Home</a></li>
+          <li class="menu1"><a href="acerca.html">Acerca De</a></li>
+          <li class="menu1"><a href="contacto.html">Contacto</a></li>
+          <li class="menu1"><a href="index.html">Log In</a></li>
         </ul>
-      </nav>
-      <h1 id="tit1">La Cocina de Juan</h1>
+      </nav>       
     </header>
-<section>
-  <h2>Contacto</h2>
-  <p id="con">Enviame tus sugerencias de receta a: <a href="ejemplo@gmail.com">castillocris14@gmail.com</a></p>
-</section>
-    <footer>
-      <P>Derechos reservados &#64 2020</P>
-    </footer>
+    <div class="container">
+      <h1>Contacto</h1>
+      <form id="contact-form" action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+      </form>
+  </div>
+<footer>
+  <ul id="logofut">
+    <li><a href="#"><img class="logft" src="imagenes/Iconos/facebook.png" alt="Facebook"></a></li>
+    <li><a href="#"><img class="logft" src="imagenes/Iconos/instagram.png" alt="Instagram"></a></li>
+    <li><a href="#"><img class="logft" src="imagenes/Iconos/youtube.png" alt="YouTube"></a></li>
+    <li><a href="#"><img class="logft" src="imagenes/Iconos/tik-tok (1).png" alt="TikTok"></a></li>
+    <li><a href="#"><img class="logft" src="imagenes/Iconos/gmail.png" alt="Gmail"></a></li>
+</ul>
+  <P>Derechos reservados Castillo Cristian &#64 2020</P>
+</footer>
   </body>
 </html>
